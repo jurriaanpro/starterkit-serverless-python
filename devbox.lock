@@ -1,0 +1,66 @@
+{
+  "lockfile_version": "1",
+  "packages": {
+    "nodejs@latest": {
+      "last_modified": "2023-10-21T11:05:41Z",
+      "resolved": "github:NixOS/nixpkgs/44881e03af1c730cbb1d72a4d41274a2c957813a#nodejs_21",
+      "source": "devbox-search",
+      "version": "21.0.0",
+      "systems": {
+        "aarch64-darwin": {
+          "store_path": "/nix/store/0bii7gbhm1ap01wik3bvpimj96mg5x9b-nodejs-21.0.0"
+        },
+        "aarch64-linux": {
+          "store_path": "/nix/store/4ir5dxb84zc41wric6k52bjrl7airzrw-nodejs-21.0.0"
+        },
+        "x86_64-darwin": {
+          "store_path": "/nix/store/gakpbn91pkljsfys8rw35bhb019zws9h-nodejs-21.0.0"
+        },
+        "x86_64-linux": {
+          "store_path": "/nix/store/3w5mc8ym9lc117z0j701dad7cg69arsz-nodejs-21.0.0"
+        }
+      }
+    },
+    "pipenv@latest": {
+      "last_modified": "2023-09-27T18:02:17Z",
+      "resolved": "github:NixOS/nixpkgs/517501bcf14ae6ec47efd6a17dda0ca8e6d866f9#pipenv",
+      "source": "devbox-search",
+      "version": "2023.2.4",
+      "systems": {
+        "aarch64-darwin": {
+          "store_path": "/nix/store/jz4jd30pfpvp4skcgbvzbdxyn57szsdl-pipenv-2023.2.4"
+        },
+        "aarch64-linux": {
+          "store_path": "/nix/store/9xqrpnrzfr55ddbzr6712wsl1xqbgqna-pipenv-2023.2.4"
+        },
+        "x86_64-darwin": {
+          "store_path": "/nix/store/b61lqzx3qmdlbwzmbay0ihkivvimsyys-pipenv-2023.2.4"
+        },
+        "x86_64-linux": {
+          "store_path": "/nix/store/blv3zlnf6x6ir34lp0chlf4rvzbam7kz-pipenv-2023.2.4"
+        }
+      }
+    },
+    "python@3.11": {
+      "last_modified": "2023-09-27T18:02:17Z",
+      "plugin_version": "0.0.1",
+      "resolved": "github:NixOS/nixpkgs/517501bcf14ae6ec47efd6a17dda0ca8e6d866f9#python311",
+      "source": "devbox-search",
+      "version": "3.11.4",
+      "systems": {
+        "aarch64-darwin": {
+          "store_path": "/nix/store/rycxjkclx801wrhwrgllak0302xzjdvx-python3-3.11.4"
+        },
+        "aarch64-linux": {
+          "store_path": "/nix/store/h4xi1djsmhk7bjdipz58xkfnf8lc9mpm-python3-3.11.4"
+        },
+        "x86_64-darwin": {
+          "store_path": "/nix/store/yqs2zxkxn61xzimdaz1pbgawk2lnm0d8-python3-3.11.4"
+        },
+        "x86_64-linux": {
+          "store_path": "/nix/store/3k7is7nc2xbav8a48vx7arad522d8czx-python3-3.11.4"
+        }
+      }
+    }
+  }
+}

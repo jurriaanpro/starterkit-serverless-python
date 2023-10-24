@@ -1,0 +1,14 @@
+{
+    "name": "starerkit-serverless-python",
+    "private": true,
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "devDependencies": {
+        "serverless": "^3.36.0",
+        "serverless-dotenv-plugin": "^6.0.0",
+        "serverless-iam-roles-per-function": "^3.2.0",
+        "serverless-offline": "^13.2.0",
+        "serverless-python-requirements": "^6.0.0"
+    }
+}

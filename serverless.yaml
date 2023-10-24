@@ -1,0 +1,44 @@
+service: serverless-starter-python
+
+provider:
+  name: aws
+  runtime: python3.8
+  stage: ${opt:stage, 'tst'}
+  region: ${opt:region, 'eu-west-1'}
+  deploymentBucket:
+    name: serverless-deployments
+    serverSideEncryption: AES256
+  environment:
+    AWS_NODEJS_CONNECTION_REUSE_ENABLED: 1
+    LOG_LEVEL: INFO
+
+plugins:
+  - serverless-dotenv-plugin
+  - serverless-iam-roles-per-function
+  - serverless-python-requirements
+  - serverless-offline
+
+custom:
+  functionNamePrefix: ${self:service}-${self:provider.stage}
+  pythonRequirements:
+    dockerizePip: non-linux
+
+package:
+  # Exclude everything, except what's specified in include
+  exclude:
+    - "**/**"
+  include:
+    - src/**
+
+functions:
+  getExample:
+    handler: src/functions/get_example/handler.handle_event
+    events:
+      - http:
+          path: api/example
+          method: get
+    environment:
+      POWERTOOLS_SERVICE_NAME: ${self:custom.functionNamePrefix}-get-example
+      GREETING: ${env:GREETING}
+
+resources:

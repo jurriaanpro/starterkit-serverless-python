@@ -1,0 +1,9 @@
+[flake8]
+max-line-length = 120
+select = C,E,F,W,B,B950
+ignore = E203, E501, W503
+
+# We need to configure the mypy.ini because the flake8-mypy's default
+# options don't properly override it, so if we don't specify it we get
+# half of the config from mypy.ini and half from flake8-mypy.
+mypy_config = mypy.ini
