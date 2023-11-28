@@ -21,6 +21,4 @@ deploy:
 ifndef ENVIRONMENT
 	@echo "ENVIRONMENT not set"; exit 1
 endif
-	rm variables.yaml || true && \
-	envsubst < deploy/variables-$(ENVIRONMENT).yaml > variables.yaml && \
 	serverless deploy --stage $(ENVIRONMENT)
