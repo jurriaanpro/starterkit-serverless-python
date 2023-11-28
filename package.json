@@ -1,5 +1,5 @@
 {
-    "name": "starerkit-serverless-python",
+    "name": "starterkit-serverless-python",
     "private": true,
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
