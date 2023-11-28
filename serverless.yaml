@@ -1,5 +1,7 @@
 service: serverless-starter-python
 
+useDotenv: true
+
 provider:
   name: aws
   runtime: python3.8
@@ -13,7 +15,6 @@ provider:
     LOG_LEVEL: INFO
 
 plugins:
-  - serverless-dotenv-plugin
   - serverless-iam-roles-per-function
   - serverless-python-requirements
   - serverless-offline
