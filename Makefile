@@ -5,7 +5,7 @@ install:
 	# Setup serverless environment
 	npm ci
 	# Setup python environment
-	pipenv install --ignore-pipfile && \
+	pipenv install --ignore-pipfile --dev && \
 	pipenv run pre-commit install -t pre-commit -t pre-push
 
 .PHONY: test
